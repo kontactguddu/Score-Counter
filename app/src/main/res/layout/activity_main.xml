@@ -20,11 +20,8 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Team A"
-                android:textSize="40sp"
-                android:textAlignment="center" />
+                style="@style/teamName"
+                android:text="Team A" />
 
             <TextView
                 android:id="@+id/score_Team_A"
@@ -76,10 +73,7 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:textSize="40sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
+                style="@style/teamName"
                 android:text="Team B" />
 
             <TextView
