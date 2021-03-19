@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -21,7 +22,7 @@
             <TextView
                 android:id="@+id/textView3"
                 style="@style/teamName"
-                android:text="Team A" />
+                android:text="@string/teamA" />
 
             <TextView
                 android:id="@+id/score_Team_A"
@@ -29,40 +30,26 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="50sp"
-                android:text="0" />
+                android:text="@string/zero" />
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="150dp"
-                android:layout_margin="7dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@android:color/holo_orange_dark"
+                style="@style/buttonStyle"
                 android:onClick="threePointsA"
-                android:text="+3 Points"
-                android:textSize="20sp" />
+                android:text="@string/threePoints"
+                />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="150dp"
-                android:layout_margin="7dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/holo_orange_dark"
-                android:layout_gravity="center"
+                style="@style/buttonStyle"
                 android:onClick="twoPointsA"
-                android:text="+2 Points"
-                android:textSize="20sp" />
+                android:text="@string/twoPoints" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="150dp"
-                android:layout_margin="7dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/holo_orange_dark"
-                android:layout_gravity="center"
+                style="@style/buttonStyle"
                 android:onClick="onePointA"
-                android:text="Free Throw"
-                android:textSize="20sp" />
+                android:text="@string/onePoint" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +61,7 @@
             <TextView
                 android:id="@+id/textView4"
                 style="@style/teamName"
-                android:text="Team B" />
+                android:text="@string/teamB" />
 
             <TextView
                 android:id="@+id/score_Team_B"
@@ -82,40 +69,24 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="50sp"
-                android:text="0" />
+                android:text="@string/zero" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/holo_orange_dark"
-                android:layout_margin="7dp"
-                android:layout_gravity="center"
+                style="@style/buttonStyle"
                 android:onClick="threePointsB"
-                android:text="+3 Points"
-                android:textSize="20sp" />
+                android:text="@string/threePoints" />
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="7dp"
-                android:background="@android:color/holo_orange_dark"
-                android:layout_gravity="center"
+                style="@style/buttonStyle"
                 android:onClick="twoPointsB"
-                android:text="+2 Points"
-                android:textSize="20sp" />
+                android:text="@string/twoPoints" />
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="7dp"
-                android:background="@android:color/holo_orange_dark"
-                android:layout_gravity="center"
-                android:onClick="onePointB"
-                android:text="Free Throw"
-                android:textSize="20sp" />
+                style="@style/buttonStyle"
+                android:text="@string/onePoint" />
         </LinearLayout>
 
     </LinearLayout>
@@ -132,7 +103,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="60dp"
             android:onClick="resetButton"
-            android:text="Reset"
+            android:text="@string/reset"
             android:textSize="20sp" />
     </RelativeLayout>
 

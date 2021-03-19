@@ -13,4 +13,13 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="buttonStyle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@android:color/holo_orange_dark</item>
+    </style>
+
 </resources>
